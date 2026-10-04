@@ -1,5 +1,5 @@
 # Harbor access committee agenda
 
-1. Approve extended winter desk hours.
-2. Review the accessible entrance signage replacement.
-3. Decide whether to add a Saturday help shift.
+[ITEM 0] Approve extended winter desk hours.
+[ITEM 1] Review the accessible entrance signage replacement.
+[ITEM 2] Decide whether to add a Saturday help shift.
