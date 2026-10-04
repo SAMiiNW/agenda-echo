@@ -7,7 +7,7 @@
   "sourceCommit": "bbb485cf04824e8c38e2a9c6f4e584f6e99ede72",
   "repository": "https://github.com/SAMiiNW/agenda-echo",
   "publicSite": "https://agenda-echo.pages.dev/",
-  "frontendDeployment": "https://bf6c744b.agenda-echo.pages.dev",
+  "frontendDeployment": "https://fbd6ea3b.agenda-echo.pages.dev",
   "backendLiveTransactions": {
     "open": "0xf3d4a4757a53efbadf72cf2870827f0f3186847f2d9597921924ff1793020a6b",
     "review": "0x9f6aa66cde1c5ed2501740dab3f51ae062f03d04592a40e76b676cfd6c940ac9"
