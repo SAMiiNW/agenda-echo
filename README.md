@@ -1,24 +1,39 @@
 # Agenda Echo
 
-Agenda Echo turns the gap between a promised meeting agenda and its published minutes into an item-level public receipt. Validators fetch both records, classify every topic as `DECIDED`, `DISCUSSED`, `DEFERRED`, or `OMITTED`, and agree on citations plus content digests. Contract code derives `COMPLETE`, `FOLLOWUP`, or `INCOMPLETE`.
+> The agenda made a promise. The minutes left a record. Agenda Echo prints the difference.
 
-The browser experience is a meeting tape rather than an argument grid: agenda items become a vertical timeline whose labels change only after StudioNet finalization. It supports a connected wallet, manual session creation, separate reviewer action, receipt lookup, and a full two-wallet demo.
+## The editorial question
 
-## Verified release
+A meeting can quietly drop an item without ever saying that it was dropped. Agenda Echo gives every promised topic a line in a public redline. Validators read the agenda and the published minutes, then classify each item as `DECIDED`, `DISCUSSED`, `DEFERRED`, or `OMITTED`. The contract turns that item-level coverage into `COMPLETE`, `FOLLOWUP`, or `INCOMPLETE`.
 
-- Application: https://agenda-echo.pages.dev/
-- Repository: https://github.com/SAMiiNW/agenda-echo
-- StudioNet contract: `0xDe66Ea52ea78e554Af30D69f55DE95582C87D031`
-- Deployment: `FINALIZED / MAJORITY_AGREE / SUCCESS`
-- Public browser run: `FOLLOWUP` with `DECIDED`, `DISCUSSED`, and `DEFERRED` outcomes
+## Three acts, not one giant form
 
-The public run used the exact canonical URL and recorded both finalized transaction hashes in `evidence/browser-run.json`.
+The public edition behaves like a small newspaper desk:
 
-## Checks
+1. **File the meeting** — name the session and appoint a reviewer.
+2. **Pin the promises** — preserve the agenda URL and every promised topic.
+3. **Read against the record** — compare the minutes only after the session exists.
+
+The final redline is separate from the filing steps. It keeps the two source digests, citations, parties, item outcomes, and finalized state.
+
+## Filed edition
+
+| Record | Location |
+|---|---|
+| Public paper | https://agenda-echo.pages.dev/ |
+| Source desk | https://github.com/SAMiiNW/agenda-echo |
+| StudioNet contract | `0xDe66Ea52ea78e554Af30D69f55DE95582C87D031` |
+| Deployment | `FINALIZED / MAJORITY_AGREE / SUCCESS` |
+| Browser proof | `FOLLOWUP` with decided, discussed, and deferred items |
+
+The exact public-browser transactions are filed in `evidence/browser-run.json`. The deployed contract source is compared byte-for-byte in `evidence/deployment-verification.json`.
+
+## Press-room checks
 
 ```text
 python -m pytest -q
 genvm-lint check contracts/contract.py
+python scripts/verify_deployment.py
 ```
 
-Evidence and demo wallets are operator-controlled fixtures. They demonstrate the workflow, not independent institutional authority.
+Demo wallets and the sample meeting records are operator-controlled fixtures. They prove the workflow, not independent institutional authority.
