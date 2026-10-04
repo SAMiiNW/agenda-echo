@@ -1,0 +1,11 @@
+{
+  "publicSite": "https://agenda-echo.pages.dev/",
+  "sessionId": "AE-DEMO-1791079755925",
+  "transactions": {
+    "open": "0x809519ccee1c2db4a371823376be6b70cf004f4c0dcffa0f75109228056441ba",
+    "review": "0xc0fe0defda9787f18c7e77aa3c4c89b2ed617479743ea97415c6bc035b4b435f"
+  },
+  "finalState": "FOLLOWUP",
+  "outcomes": ["DECIDED", "DISCUSSED", "DEFERRED"],
+  "uiResult": "DEMO FINALIZED"
+}

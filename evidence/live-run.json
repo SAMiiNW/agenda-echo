@@ -1,0 +1,43 @@
+{
+  "sessionId": "MEETING-1791079271",
+  "transactions": {
+    "open": "0xf3d4a4757a53efbadf72cf2870827f0f3186847f2d9597921924ff1793020a6b",
+    "review": "0x9f6aa66cde1c5ed2501740dab3f51ae062f03d04592a40e76b676cfd6c940ac9"
+  },
+  "state": {
+    "agenda_digest": "86bde706f649ecacbd0def65e04142d17c6d4da74f0cf61a2b02526b6b392f07",
+    "agenda_url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/34e31a5c6ec0e148a91a632c8d57f1c44261b637/docs/evidence/agenda.md",
+    "citations": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "id": "MEETING-1791079271",
+    "items": [
+      "Approve extended winter desk hours",
+      "Review the accessible entrance signage replacement",
+      "Decide whether to add a Saturday help shift"
+    ],
+    "minutes_digest": "8dea54a821b59c8a703fa2cd516c11541206f6228f5f2190ac5be3d4c040abf9",
+    "minutes_url": "https://cdn.jsdelivr.net/gh/SAMiiNW/agenda-echo@34e31a5c6ec0e148a91a632c8d57f1c44261b637/docs/evidence/minutes.md",
+    "outcomes": [
+      "DECIDED",
+      "DISCUSSED",
+      "DEFERRED"
+    ],
+    "owner": "0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f",
+    "reviewer": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A",
+    "state": "FOLLOWUP",
+    "title": "Harbor access committee"
+  },
+  "walletDisclosure": "Both wallets and evidence files are operator-controlled fixtures."
+}

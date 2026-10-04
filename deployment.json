@@ -1,0 +1,19 @@
+{
+  "network": "StudioNet",
+  "account": "SAMiiNW",
+  "contractAddress": "0xDe66Ea52ea78e554Af30D69f55DE95582C87D031",
+  "deploymentTransaction": "0x991243b9df617f0db1aede7f40a091f38667762642b2365dd8b1c1a898698d24",
+  "sourceSha256": "8abb5846d27e1f83d8060c3cca10dd2bb29f5b4a02e53f009ed902f1814cbc5e",
+  "sourceCommit": "bbb485cf04824e8c38e2a9c6f4e584f6e99ede72",
+  "repository": "https://github.com/SAMiiNW/agenda-echo",
+  "publicSite": "https://agenda-echo.pages.dev/",
+  "frontendDeployment": "https://7a3d6661.agenda-echo.pages.dev",
+  "backendLiveTransactions": {
+    "open": "0xf3d4a4757a53efbadf72cf2870827f0f3186847f2d9597921924ff1793020a6b",
+    "review": "0x9f6aa66cde1c5ed2501740dab3f51ae062f03d04592a40e76b676cfd6c940ac9"
+  },
+  "browserLiveTransactions": {
+    "open": "0x809519ccee1c2db4a371823376be6b70cf004f4c0dcffa0f75109228056441ba",
+    "review": "0xc0fe0defda9787f18c7e77aa3c4c89b2ed617479743ea97415c6bc035b4b435f"
+  }
+}
