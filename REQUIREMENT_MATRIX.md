@@ -1,10 +1,9 @@
-# Requirement matrix
+# Steward remediation matrix
 
-| Requirement | Implementation | Proof |
-|---|---|---|
-| Compare an agenda with published minutes | `review_session` retrieves both records and classifies every agenda item | Contract tests and `evidence/live-run.json` |
-| Preserve review provenance | URLs, SHA-256 digests, citations, outcomes, owner, and reviewer are stored | `contracts/contract.py` and finalized receipt |
-| Keep lifecycle deterministic | Contract code derives `COMPLETE`, `FOLLOWUP`, or `INCOMPLETE` | Unit tests cover all three states |
-| Provide a complete public workflow | Open, review, lookup, wallet connection, and full demo are available | `https://agenda-echo.pages.dev/` |
-| Prove the deployed artifact | Source hash matches the finalized StudioNet deployment | `evidence/deployment-verification.json` |
-| Prove browser execution | Canonical public site reached `DEMO FINALIZED` | `evidence/browser-run.json` |
+| Mandatory concern | Implementation path | Targeted test | Deployment or browser proof | Status |
+|---|---|---|---|---|
+| Provenance must be immutable and inspectable. | Accept only pinned raw GitHub evidence URLs containing a full 40-character commit SHA; freeze publisher labels and URL provenance when opening a session. | Reject moving branches, non-GitHub sources, malformed paths, duplicate source identity and unauthorized review. | New Studio Next record must expose both pinned URLs and publisher labels. | UNVERIFIED |
+| Every classification must be traceable to the source text. | Store one normalized finding per agenda item with exact agenda quote, exact minutes quote for non-omitted items, source indexes and explanation. | Reject invented quotes, incomplete item lists, bad source indexes and unsupported well-shaped outcomes. | Live receipt must retain item-level quotes and explanations. | UNVERIFIED |
+| Source receipts must be independently reproducible. | Validators freeze both complete bodies with strict equality, verify SHA-256 receipts and judge normalized findings against those frozen bodies. | Reject changed content after receipt, source prompt injection and consensus-boundary disagreement. | Live record must preserve both SHA-256 digests and exact pinned URLs. | UNVERIFIED |
+| The audit trail must show who did what and in which order. | Store append-only OPENED and REVIEWED events with sequence number, actor, action and source receipt metadata. | Cover event order, actor identity, replay and immutable finalized review. | Live session must expose a two-event audit trail matching owner and reviewer roles. | UNVERIFIED |
+| The public workflow must present the provenance and audit trail. | Update the site, documentation, deployment manifest and receipt view for Studio Next. | Surface checks require pinned URLs, findings, audit events and finalized tracking. | Production domain must serve the new contract and a finalized live session. | UNVERIFIED |

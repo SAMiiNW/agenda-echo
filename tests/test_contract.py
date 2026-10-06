@@ -6,6 +6,6 @@ def load(n):
 def test_session_states():
  f=load('session_state');assert f(['DECIDED','DISCUSSED'])=='COMPLETE';assert f(['DECIDED','DEFERRED'])=='FOLLOWUP';assert f(['DEFERRED','OMITTED'])=='INCOMPLETE'
 def test_bound_consensus_and_sources():
- assert 'every outcome, citation index, and source digest must match exactly' in S;assert "origin==s.agenda_origin" in S;assert 'outcome attribution required' in S
+ for phrase in ('full commit SHA','strict_eq','prompt_non_comparative','agenda_quote','minutes_quote','audit_events','Source receipt mismatch'):assert phrase in S
 def test_surface():
  for n in ('open_session','review_minutes','get_session'):assert f'def {n}' in S
