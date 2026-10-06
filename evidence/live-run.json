@@ -1,43 +1,123 @@
 {
-  "sessionId": "MEETING-1791079271",
+  "sessionId": "HARBOR-AUDIT-1791252315",
   "transactions": {
-    "open": "0xf3d4a4757a53efbadf72cf2870827f0f3186847f2d9597921924ff1793020a6b",
-    "review": "0x9f6aa66cde1c5ed2501740dab3f51ae062f03d04592a40e76b676cfd6c940ac9"
+    "open": "0x7911592ccf5e14d4d91665ff2fa0cb6608e70bbed8d6f1870817ff8411feb5e1",
+    "review": "0x1dfb829b10233ba4f65e80465f0b0277cfdfbe7cf56cfce5256179623b82e2fd"
   },
   "state": {
-    "agenda_digest": "86bde706f649ecacbd0def65e04142d17c6d4da74f0cf61a2b02526b6b392f07",
-    "agenda_url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/34e31a5c6ec0e148a91a632c8d57f1c44261b637/docs/evidence/agenda.md",
-    "citations": [
-      [
-        0,
-        1
-      ],
-      [
-        0,
-        1
-      ],
-      [
-        0,
-        1
-      ]
+    "agenda_publisher": "Harbor Public Records demo publisher",
+    "agenda_ref": {
+      "commit": "e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d",
+      "path": "docs/evidence/agenda.md",
+      "repository": "SAMiiNW/agenda-echo"
+    },
+    "agenda_url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/agenda.md",
+    "audit_events": [
+      {
+        "action": "OPENED",
+        "actor": "0xcafa30bf94d4fb01146588a1b7901bd85e7dbd0f",
+        "sequence": 0,
+        "source": {
+          "commit": "e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d",
+          "path": "docs/evidence/agenda.md",
+          "publisher": "Harbor Public Records demo publisher",
+          "repository": "SAMiiNW/agenda-echo",
+          "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/agenda.md"
+        }
+      },
+      {
+        "action": "REVIEWED",
+        "actor": "0x013a0745a3b2dbf87f4ab377266fccb7e6eec88a",
+        "receipts": [
+          {
+            "index": 0,
+            "sha256": "2e34129fa4e64c3e630edabca88d94a2cc762c35557bcc6e73d25179e9f1ef1f",
+            "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/agenda.md"
+          },
+          {
+            "index": 1,
+            "sha256": "5fe0c0be45d80d1dda5ea3a4e85e813c8470465275f63054dd7a666d0a1e85dd",
+            "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/minutes.md"
+          }
+        ],
+        "result_state": "FOLLOWUP",
+        "sequence": 1,
+        "source": {
+          "commit": "e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d",
+          "path": "docs/evidence/minutes.md",
+          "publisher": "Harbor Clerk Minutes demo publisher",
+          "repository": "SAMiiNW/agenda-echo",
+          "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/minutes.md"
+        }
+      }
     ],
-    "id": "MEETING-1791079271",
+    "findings": [
+      {
+        "agenda_quote": "[ITEM 0] Approve extended winter desk hours.",
+        "explanation": "The agenda lists the item for approval and the minutes explicitly record the outcome as DECIDED by consensus, confirming the decision was made.",
+        "index": 0,
+        "item": "Approve extended winter desk hours.",
+        "minutes_quote": "[ITEM 0][OUTCOME DECIDED] The committee approved extended winter desk hours by consensus.",
+        "outcome": "DECIDED",
+        "source_indexes": [
+          0,
+          1
+        ]
+      },
+      {
+        "agenda_quote": "[ITEM 1] Review the accessible entrance signage replacement.",
+        "explanation": "The agenda schedules a review and the minutes show discussion occurred with a survey assigned but no decision, matching DISCUSSED.",
+        "index": 1,
+        "item": "Review the accessible entrance signage replacement.",
+        "minutes_quote": "[ITEM 1][OUTCOME DISCUSSED] Members discussed the entrance signage replacement and assigned a facilities survey. No final decision was adopted.",
+        "outcome": "DISCUSSED",
+        "source_indexes": [
+          0,
+          1
+        ]
+      },
+      {
+        "agenda_quote": "[ITEM 2] Decide whether to add a Saturday help shift.",
+        "explanation": "The agenda calls for a decision but the minutes state it was deferred to the next meeting, confirming DEFERRED status.",
+        "index": 2,
+        "item": "Decide whether to add a Saturday help shift.",
+        "minutes_quote": "[ITEM 2][OUTCOME DEFERRED] The Saturday help shift was explicitly deferred to the next meeting pending staffing figures.",
+        "outcome": "DEFERRED",
+        "source_indexes": [
+          0,
+          1
+        ]
+      }
+    ],
+    "id": "HARBOR-AUDIT-1791252315",
     "items": [
-      "Approve extended winter desk hours",
-      "Review the accessible entrance signage replacement",
-      "Decide whether to add a Saturday help shift"
+      "Approve extended winter desk hours.",
+      "Review the accessible entrance signage replacement.",
+      "Decide whether to add a Saturday help shift."
     ],
-    "minutes_digest": "8dea54a821b59c8a703fa2cd516c11541206f6228f5f2190ac5be3d4c040abf9",
-    "minutes_url": "https://cdn.jsdelivr.net/gh/SAMiiNW/agenda-echo@34e31a5c6ec0e148a91a632c8d57f1c44261b637/docs/evidence/minutes.md",
-    "outcomes": [
-      "DECIDED",
-      "DISCUSSED",
-      "DEFERRED"
+    "minutes_publisher": "Harbor Clerk Minutes demo publisher",
+    "minutes_ref": {
+      "commit": "e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d",
+      "path": "docs/evidence/minutes.md",
+      "repository": "SAMiiNW/agenda-echo"
+    },
+    "minutes_url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/minutes.md",
+    "owner": "0xcafa30bf94d4fb01146588a1b7901bd85e7dbd0f",
+    "receipts": [
+      {
+        "index": 0,
+        "sha256": "2e34129fa4e64c3e630edabca88d94a2cc762c35557bcc6e73d25179e9f1ef1f",
+        "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/agenda.md"
+      },
+      {
+        "index": 1,
+        "sha256": "5fe0c0be45d80d1dda5ea3a4e85e813c8470465275f63054dd7a666d0a1e85dd",
+        "url": "https://raw.githubusercontent.com/SAMiiNW/agenda-echo/e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d/docs/evidence/minutes.md"
+      }
     ],
-    "owner": "0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f",
-    "reviewer": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A",
+    "reviewer": "0x013a0745a3b2dbf87f4ab377266fccb7e6eec88a",
     "state": "FOLLOWUP",
     "title": "Harbor access committee"
   },
-  "walletDisclosure": "Both wallets and evidence files are operator-controlled fixtures."
+  "fixtureDisclosure": "Publishers, evidence files and wallets are operator-controlled fixtures. Pinned commits, receipts, roles and audit order are enforced by the contract."
 }

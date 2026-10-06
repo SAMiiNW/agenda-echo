@@ -1,19 +1,12 @@
 {
-  "network": "StudioNet",
-  "account": "SAMiiNW",
-  "contractAddress": "0xDe66Ea52ea78e554Af30D69f55DE95582C87D031",
-  "deploymentTransaction": "0x991243b9df617f0db1aede7f40a091f38667762642b2365dd8b1c1a898698d24",
-  "sourceSha256": "8abb5846d27e1f83d8060c3cca10dd2bb29f5b4a02e53f009ed902f1814cbc5e",
-  "sourceCommit": "bbb485cf04824e8c38e2a9c6f4e584f6e99ede72",
-  "repository": "https://github.com/SAMiiNW/agenda-echo",
-  "publicSite": "https://agenda-echo.pages.dev/",
-  "frontendDeployment": "https://fbd6ea3b.agenda-echo.pages.dev",
-  "backendLiveTransactions": {
-    "open": "0xf3d4a4757a53efbadf72cf2870827f0f3186847f2d9597921924ff1793020a6b",
-    "review": "0x9f6aa66cde1c5ed2501740dab3f51ae062f03d04592a40e76b676cfd6c940ac9"
-  },
-  "browserLiveTransactions": {
-    "open": "0xd9a51d6812b08c8e5b267cb3bbfd4325d12f1e9d03debd2381fa77a5415a7829",
-    "review": "0x67377c2f790e1669a1ee1b54fd44f2dbe4ab851260f9c684bc9a126f2cd21daf"
-  }
+  "project": "Agenda Echo",
+  "network": "GenLayer Studio Next",
+  "chainId": 61997,
+  "rpcUrl": "https://studio-next.genlayer.com/api",
+  "explorerUrl": "https://explorer-studio-dev.genlayer.com",
+  "contractAddress": "0x5D4eCD8920D81DB46Ede83e68775AbB632e8E26E",
+  "deploymentTransaction": "0x360ffc70b017530504dc7bb886df64b9c5605ce393f9b86645a8fc039c470027",
+  "sourceSha256": "21530b799239485b3c07eb6c3355b7ef86c9997ee72ab3c028320ed2a8b9b3ad",
+  "sourceCommit": "e6c60358a1bc4b05b38c4bc2282f38f8fb7e1d5d",
+  "repository": "https://github.com/SAMiiNW/agenda-echo"
 }
